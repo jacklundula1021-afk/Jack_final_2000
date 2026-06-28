@@ -12,8 +12,17 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: var(--carmine);
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
 }
 
 header {
@@ -52,6 +61,102 @@ header {
   color: white;
   cursor: pointer;
 }
+
+
+
+
+/*Footer================================*/
+
+
+footer {
+  background-color: var(--gunmetal);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-footer{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  
+}
+.logo-footer a {
+  flex: 0.5;
+ 
+  padding: 0rem;
+}
+.logo-footer p {
+  flex: 1;
+  align-items: left;
+  justify-content: left;
+  bottom: 0;
+
+}
+
+.footer-content {
+
+  flex: 1;
+
+
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+}
+
+
+
+
+/*HERO SECTION ==============*/
+
+#hero {
+
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+    background-image: url("../images/hero-homePage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.hero-content { 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--carmine);
+  color: var(--white);
+}
+
+.hero-buttons {
+  margin-top: 5rem;
+}
+
+
 
 
 
