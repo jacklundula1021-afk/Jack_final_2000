@@ -236,4 +236,29 @@ footer {
     font-size: 0.6rem;
   }
 
+  /*HERO SECTION RESPONSIVE========================*/
+  #hero {
+    height: 40vh;
+    font-size: clamp(0.5rem, 2.5vw, 1.25rem);
+    padding: 1rem;
+
+  }
+
+  .hero-content { 
+    padding: 1rem;
+
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+  }
+  .hero-buttons a {
+
+    margin: 0.5rem 0;
+  }
+
 }
