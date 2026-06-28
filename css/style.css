@@ -1,0 +1,90 @@
+:root {
+  --carmine: #bf1a2f;
+  --jet-black: #022b3a;
+  --white: #ffffff;
+  --dust-grey: #e4dfda;
+  --gunmetal: #3f403f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--carmine);
+}
+
+header {
+  background-color: var(--jet-black);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* DESKTOP MENU */
+#links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#links li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  #links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+    #links.active {
+    display: flex; 
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+}
