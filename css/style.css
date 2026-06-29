@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', 'Noto Sans', 'Racing Sans One', sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -29,11 +29,18 @@ main {
 }
 
 
+
+
 /*fonts*/
 header li a {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05rem;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  
 }
 
 
@@ -109,8 +116,13 @@ footer {
   bottom: 0;
   display: flex;
   flex-direction: column;
+  font-family: "Unna", Georgia, "Times New Roman", serif;
 
 
+}
+
+footer p {
+  font-family: "Unna", Georgia, "Times New Roman", serif;
 }
 
 .footer-top {
@@ -141,12 +153,14 @@ footer {
 
   flex: 1;
 
-
 }
+
 
 .footer-bottom {
   margin-top: 1rem;
 }
+
+
 
 .logo-footer img {
   width: 8rem;
@@ -189,6 +203,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 15px;
+  font-family: "Poetsen One", serif;
 }
 
 .hero-buttons a {
@@ -211,10 +226,12 @@ footer {
 }
 
 .hero-content h1 {
-  font-size: clamp(2rem, 3.5vw, 4rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
   margin-bottom: 1rem;
-  font-family: 'noto sans', sans-serif;
+  font-family: "Poetsen One", "Trebuchet MS", Verdana, sans-serif;
+  
 }
+
 
 
 
@@ -264,7 +281,7 @@ footer {
   #hero-about,
   #hero-get-involved{
     height: 40vh;
-    font-size: clamp(0.5rem, 2vw, 1.25rem);
+    font-size: clamp(0.5rem, 1.5vw, 2rem);
     padding: 1rem;
 
   }
@@ -374,6 +391,7 @@ footer {
   padding: 5rem;
   margin: 0 auto;
   max-width: 85rem;
+  
 }
 
 
@@ -441,8 +459,10 @@ input[type="checkbox"] {
 }
 
 /* Submit button centered under both columns */
-#section1-tell-us button {
-    display: block;
+/*For Tell Your Story, and Get Involved */
+#section1-tell-us button,
+#section1-get-involved button {
+  
     width: 25rem;
     padding: 1rem;
     background-color: var(--carmine);
@@ -451,12 +471,15 @@ input[type="checkbox"] {
     border-radius: 0.5rem; 
     font-weight: bold;
     cursor: pointer;
-    margin: 0 auto;
-    margin-top: 1rem;
+
+    display: block;
+    width: 25rem;
+    margin: 1rem auto 0;
 }
 
 #section1-tell-us  button:hover {
     background-color: rgb(144, 0, 0) ;
+
 }
 
 /* Responsive =================================== */
@@ -467,8 +490,13 @@ input[type="checkbox"] {
         grid-template-columns: 1fr;
     }
 
-    #section1-tell-us button {
+    #section1-tell-us button,
+    #section1-get-involved button {
         width: 100%;
+    }
+
+    #section1-tell-us {
+        padding: 2rem;
     }
 }
 
@@ -862,3 +890,13 @@ table {
     border-collapse: collapse;
 }
 
+
+/*Donation Form*/
+
+#section1-get-involved {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 4rem 2rem;
+}
