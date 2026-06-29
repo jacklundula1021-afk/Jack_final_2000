@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Noto Sans', 'Racing Sans One', sans-serif;
 }
 
 html, body {
@@ -27,6 +27,15 @@ main {
     flex: 1;
     
 }
+
+
+/*fonts*/
+header li a {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
 
 header {
   background-color: var(--jet-black);
@@ -47,6 +56,7 @@ header img{
   height: 6rem;
   width: auto;
 }
+
 
 
 
@@ -198,6 +208,12 @@ footer {
 .hero-buttons a:hover {
   transform: scale(1.2);
   transition: all 0.3s ease;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin-bottom: 1rem;
+  font-family: 'noto sans', sans-serif;
 }
 
 
