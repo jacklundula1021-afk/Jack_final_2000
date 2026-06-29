@@ -21,9 +21,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 main {
     flex: 1;
+    
 }
 
 header {
@@ -198,7 +200,7 @@ footer {
     justify-content: center;
   }
 /*Footer responsive==========*/
-  .footer-top {
+.footer-top {
     flex-direction: column;
   }
 
@@ -237,7 +239,8 @@ footer {
   }
 
   /*HERO SECTION RESPONSIVE========================*/
-  #hero {
+  #hero, #hero-Tell-us,
+  #hero-programs {
     height: 40vh;
     font-size: clamp(0.5rem, 2.5vw, 1.25rem);
     padding: 1rem;
@@ -261,4 +264,199 @@ footer {
     margin: 0.5rem 0;
   }
 
+}
+
+
+
+
+
+
+/*==========================================================*/
+/*Tell YOUR STORY PAGE==============*/
+
+/*HERO======*/
+
+#hero-Tell-us {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  background-image: url("../images/hero-tell-us.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+/*FORM==========================*/
+#section1-tell-us{
+  padding: 5rem;
+  margin: 0 auto;
+  max-width: 85rem;
+}
+
+
+.story-form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    padding: 0 10px;
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+input:focus, textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.2);
+}
+
+/* Checkbox fix */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Submit button centered under both columns */
+button {
+    display: block;
+    margin: 1rem auto 0;
+    width: 25rem;
+    padding: 1rem;
+    background-color: #bf1a2f;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bf1a2f ;
+}
+
+/* Responsive =================================== */
+
+/*grid for the form */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*PAGE PROGRAMS====================================*/
+
+#hero-programs{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  background-image: url("../images/hero-program.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+}
+
+#section1-programs {
+    max-width: 85rem;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.program-rectangle {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+.program-rectangle h3 {
+    margin-bottom: 1rem;
+    color: var(--jet-black);
+    font-size: 1.3rem;
+}
+
+.program-rectangle p {
+    color: var(--gunmetal);
+}
+
+
+@media (max-width: 768px) {
+    #section1-programs {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #section1-programs {
+        grid-template-columns: 1fr;
+    }
 }
