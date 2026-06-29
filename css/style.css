@@ -540,6 +540,9 @@ input[type="checkbox"] {
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -555,17 +558,38 @@ input[type="checkbox"] {
     color: var(--gunmetal);
 }
 
+.program-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.program-icon img {
+    max-width:7rem;
+    max-height: 7rem;
+}
+
+
+
 
 @media (max-width: 768px) {
     #section1-programs {
         grid-template-columns: 1fr 1fr;
     }
+    .program-icon img {
+    max-width:5rem;
+    max-height: 5rem;
+}
 }
 
 @media (max-width: 480px) {
     #section1-programs {
         grid-template-columns: 1fr;
     }
+    .program-icon img {
+    max-width:3rem;
+    max-height: 3rem;
+}
 }
 
 
