@@ -43,16 +43,35 @@ header {
   width: 100%;
 }
 
+header img{
+  height: 6rem;
+  width: auto;
+}
+
+
+
 /* DESKTOP MENU */
 #links {
   display: flex;
   list-style: none;
   gap: 1rem;
+
+
 }
 
 #links li a {
   color: var(--white);
   text-decoration: none;
+  
+}
+
+#links li :hover {
+  color: var(--dust-grey);
+  background-color:#60AEFC;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
 }
 
 /* HAMBURGER */
@@ -64,6 +83,7 @@ header {
   color: white;
   cursor: pointer;
 }
+
 
 
 
@@ -123,18 +143,28 @@ footer {
   height: auto;
 }
 
+.footer-content img {
+  display: inline-block;
+  margin-top: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
 
-
+.footer-content a:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 
 /*HERO SECTION ==============*/
 
 #hero {
 
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 2rem;
 
     background-image: url("../images/hero-homePage.jpg");
@@ -162,7 +192,12 @@ footer {
 }
 
 .hero-buttons {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hero-buttons a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 
@@ -170,8 +205,10 @@ footer {
 
 
 
+
+
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   .hamburger {
     display: block;
@@ -190,6 +227,11 @@ footer {
 
   header {
     flex-wrap: wrap;
+  }
+
+  header img{
+  height: 4rem;
+  width: auto;
   }
     #links.active {
     display: flex; 
@@ -227,6 +269,12 @@ footer {
 
 @media (max-width: 480px) {
 
+  /*HEADER RESPONSIVE========================*/
+  header img{
+  height: 2.5rem;
+  width: auto;
+  }
+
   /*FOOTER RESPONSIVE========================*/
   .logo-footer img {
     width: 6rem;
@@ -249,6 +297,14 @@ footer {
     font-size: 0.6rem;
   }
 
+  .footer-content img {
+ 
+  margin-top: 1rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 1rem;
+ }
+
   /*HERO SECTION RESPONSIVE========================*/
 
 
@@ -261,12 +317,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 0.1rem;
 
   }
   .hero-buttons a {
 
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
   }
 
 }
@@ -326,6 +382,8 @@ fieldset {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    border-color: #f0f0f0;
 }
 
 
@@ -367,22 +425,22 @@ input[type="checkbox"] {
 }
 
 /* Submit button centered under both columns */
-button {
+#section1-tell-us button {
     display: block;
-    margin: 1rem auto 0;
     width: 25rem;
     padding: 1rem;
-    background-color: #bf1a2f;
+    background-color: var(--carmine);
     color: white;
     border: none;
-    border-radius: 0.5rem;
-    
+    border-radius: 0.5rem; 
     font-weight: bold;
     cursor: pointer;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
-button:hover {
-    background-color: #bf1a2f ;
+#section1-tell-us  button:hover {
+    background-color: rgb(144, 0, 0) ;
 }
 
 /* Responsive =================================== */
@@ -393,7 +451,7 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
-    button {
+    #section1-tell-us button {
         width: 100%;
     }
 }
@@ -530,7 +588,7 @@ button:hover {
     }
 
     #section2-awareness h2 {
-        font-size: clamp(2rem, 5vw, 3rem);
+        font-size: clamp(1.80rem, 5vw, 3rem);
     }
 }
 
@@ -733,7 +791,7 @@ button:hover {
   text-align: center;
   padding: 2rem;
 
-  background-image: url("../images/hero-getInvolved.jpeg");
+  background-image: url("../images/hero-get-involved.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -761,7 +819,7 @@ table {
 
 th,
 td {
-    border: 1px solid #ddd;
+    border: 1px solid #d0cfcf;
     padding: 1rem;
     text-align: left;
 }
@@ -776,7 +834,7 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #e8e8e8;
+    background-color: var(--carmine);
 }
 
 .table-container {
