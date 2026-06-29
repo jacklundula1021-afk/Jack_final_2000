@@ -162,7 +162,7 @@ footer {
 }
 
 .hero-buttons {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 
@@ -198,6 +198,17 @@ footer {
   header {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  #hero, #hero-Tell-us,
+  #hero-programs, 
+  #hero-awareness ,
+  #hero-about,
+  #hero-get-involved{
+    height: 40vh;
+    font-size: clamp(0.5rem, 2vw, 1.25rem);
+    padding: 1rem;
+
   }
 /*Footer responsive==========*/
 .footer-top {
@@ -239,14 +250,7 @@ footer {
   }
 
   /*HERO SECTION RESPONSIVE========================*/
-  #hero, #hero-Tell-us,
-  #hero-programs, 
-  #hero-awareness {
-    height: 40vh;
-    font-size: clamp(0.5rem, 2.5vw, 1.25rem);
-    padding: 1rem;
 
-  }
 
   .hero-content { 
     padding: 1rem;
@@ -541,3 +545,199 @@ button:hover {
         padding: 1.5rem;
     }
 }
+
+
+
+
+
+
+
+/*ABOUT PAGE=========================*/
+
+#hero-about {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  background-image: url("../images/hero-about.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+#section1-about {
+    padding: 1rem;
+}
+
+.founders {
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    color: var(--gunmetal);
+}
+
+.founder {
+
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    padding: 1rem;
+    height: auto;
+    flex: 1fr;
+    margin: 0 1rem;
+}
+
+
+.founder img {
+
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.founder-info {
+  padding-left: 0.8rem;
+
+}
+
+
+/*SECTION2================*/
+
+#section2-about {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+}
+
+#section2-about img {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  margin-right: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+#section2-about .about-content {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-right: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+/*about-content buttons===========*/
+
+
+#about h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.about-content-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    background: var(--jet-black);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.about-content-btn:hover {
+    background: #154a68;
+}
+
+/* hidden by default */
+.about-hidden-content {
+    display: none;
+
+    padding: 2rem;
+    
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    line-height: 1.6;
+}
+
+
+
+/*Responsive*/
+
+
+@media (max-width: 985px) {
+
+
+  .founder-info {
+    font-size: clamp(0.6rem, 2vw, 1rem);
+  }
+
+
+
+    .founders{
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .founder img{
+      width: 4rem;
+      height: 4rem;
+    }
+
+    #section2-about {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    #section2-about img {
+    max-width: 70%;
+    height: auto;
+
+   }
+
+
+
+}
+
+
+
+
+
+/*Get Involved PAGE=========================*/
+
+#hero-get-involved {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  background-image: url("../images/hero-getInvolved.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
