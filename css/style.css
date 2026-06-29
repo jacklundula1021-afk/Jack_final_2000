@@ -741,3 +741,50 @@ button:hover {
   color: white;
 }
 
+/*TABLE ============*/
+#volunteer-opportunities {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+#volunteer-opportunities h2,
+#volunteer-opportunities p {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--jet-black);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: var(--dust-grey);
+}
+
+tr:hover {
+    background-color: #e8e8e8;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
