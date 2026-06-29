@@ -240,7 +240,8 @@ footer {
 
   /*HERO SECTION RESPONSIVE========================*/
   #hero, #hero-Tell-us,
-  #hero-programs {
+  #hero-programs, 
+  #hero-awareness {
     height: 40vh;
     font-size: clamp(0.5rem, 2.5vw, 1.25rem);
     padding: 1rem;
@@ -458,5 +459,85 @@ button:hover {
 @media (max-width: 480px) {
     #section1-programs {
         grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/*AWARENESS PAGE===================*/
+
+#hero-awareness {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  background-image: url("../images/hero-awareness.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+
+.video-clip {
+    max-width: 60rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    aspect-ratio: 16 / 9;
+}
+
+.video-clip iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+#section2-awareness {
+    color: var(--gunmetal);
+    line-height: 1.6;
+    padding: 5rem;
+
+}
+
+#section2-awareness p {
+  column-gap: 2rem;
+    column-count: 2;
+}
+
+#section2-awareness h2 {
+    
+    font-size: 5rem;
+}
+
+
+/*RESPONSIVE AWARENESS PAGE*/
+
+@media (max-width: 1280px) {
+    #section2-awareness p {
+        column-count: 1;
+    }
+
+    #section2-awareness h2 {
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+}
+
+@media (max-width: 768px) {
+    #section2-awareness  {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #section2-awareness  {
+        padding: 1.5rem;
     }
 }
