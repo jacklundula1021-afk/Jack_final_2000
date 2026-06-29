@@ -1006,3 +1006,31 @@ table {
     width: 100%;
     object-fit: cover;
 }}
+
+
+
+
+
+@media print {
+
+    nav,
+    footer,
+    button {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    .about-hidden-content {
+        display: block;
+    }
+
+}
