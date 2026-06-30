@@ -472,11 +472,11 @@ footer p {
 
 
 fieldset {
-    border: 1px solid #ddd;
+    border: 1px solid var(--dust-grey);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-    border-color: #f0f0f0;
+    border-color: var(--dust-grey);
 }
 
 
